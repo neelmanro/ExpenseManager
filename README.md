@@ -1,5 +1,6 @@
 # ExpenseManager
 Author-: Neel Manro, manroneel@gmail.com
+
 A simple C-based Expense Manager** that allows users to track daily spending, stay within a set budget, and save or reload expenses using text file storage.
 
 This project is built with beginner-friendly C concepts including structs, file I/O, user input handling, and budget validation logic. It runs entirely in the command line.
