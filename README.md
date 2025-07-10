@@ -1,46 +1,41 @@
-# ExpenseManager
-Author-: Neel Manro, manroneel@gmail.com
+# PlagiarismChecker  
+Author – Neel Manro, manroneel@gmail.com
 
-A simple C-based Expense Manager** that allows users to track daily spending, stay within a set budget, and save or reload expenses using text file storage.
+A simple **Python-based Plagiarism Checker** that compares two essay files by removing stopwords, filtering unique words, and calculating a similarity score using set operations. This tool helps detect copied content with clear percentage-based feedback.
 
-This project is built with beginner-friendly C concepts including structs, file I/O, user input handling, and budget validation logic. It runs entirely in the command line.
-
----
-
-1. Features
-
-- Add new expenses by category
-- Track total money spent
-- View summary of all expenses
-- Check remaining budget
-- Save expenses to a file
-- Load saved expenses from a previous session
-
-
+This project is built with beginner-friendly Python concepts like functions, file handling, sets, dictionaries, and conditionals. It runs entirely in the terminal.
 
 ---
 
-2. Concepts Used
+### 1. Features
 
-- C structs
-- Arrays and loops
-- File input/output (`fopen`, `fprintf`, `fscanf`)
-- User input handling with `scanf` and `getchar`
-- Budget validation and tracking
-- Command-line UI
+- Read and display two essay files  
+- Clean and filter words by removing stopwords  
+- Count total words and unique words in both files  
+- Detect matching and differing words  
+- Calculate a similarity score (%)  
+- Print a result message (LOW, MEDIUM, or HIGH similarity)
 
 ---
 
-3. How to Compile & Run
+### 2. Concepts Used
 
-Follow these steps to compile and run the program on any system with GCC installed.
-1. Download the `expense.c` file  
-2. Open Terminal and navigate to the project folder  
-3. Compile the program:
+- Python functions  
+- File input/output (`open`, `read`, `with` statement)  
+- String manipulation (`split`, `replace`, `lower`)  
+- Sets and dictionaries  
+- Conditionals and comparisons  
+- Basic math and percentage calculation  
+- Reusable logic via helper functions
+
+---
+
+### 3. How to Run
+
+1. Clone or download the repo  
+2. Add your `.txt` essay files to the same directory  
+3. Rename them as `essay_draft.txt` and `copied_draft.txt` (or modify the script filenames)  
+4. Run the script:
 
 ```bash
-gcc expense.c -o expense
-gcc expense.c -o expense
-after this
-./expense
-
+python plagiarism_checker.py
